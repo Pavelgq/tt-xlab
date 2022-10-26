@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  flex: 1 1;
+}
+
+.subTitle {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  margin-bottom: 24px;
+}
+
+.search {
+  margin-bottom: 32px;
+}
+
+.result {
+  padding: 24px;
+}

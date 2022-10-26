@@ -1,53 +1,63 @@
+import { ReactComponent as MainIcon} from "../../assets/svg/home.svg"
+import { ReactComponent as SearchIcon} from "../../assets/svg/search.svg"
+import { ReactComponent as TableIcon} from "../../assets/svg/tables.svg"
+import { ReactComponent as CalendarIcon } from "../../assets/svg/calendar.svg"
+import { ReactComponent as MapIcon} from "../../assets/svg/map.svg"
+import { ReactComponent as VidgetsIcon} from "../../assets/svg/vidgets.svg"
+import { ReactComponent as SettingIcon} from "../../assets/svg/settings.svg"
+import { ReactComponent as SettingUserIcon} from "../../assets/svg/people.svg"
+import { ReactComponent as FinanceIcon } from "../../assets/svg/finance.svg"
+import { ReactComponent as ExitIcon } from "../../assets/svg/exit.svg"
 export interface NavItemsI {
   name: string,
   link?: string,
-  icon: string,
+  Icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>,
   subItems?: NavItemsI[]
 }
 
 export const navItems: NavItemsI[] = [
   {
     name: 'Главная',
-    link: '/news',
-    icon: "../../assets/svg/home.svg"
+    link: '/',
+    Icon: MainIcon
   },
   {
     name: 'Поиск адресов',
     link: '/address',
-    icon: "../../assets/svg/search.svg"
+    Icon: SearchIcon
   },
   {
     name: 'Таблицы',
-    icon: "../../assets/svg/tables.svg"
+    Icon: TableIcon
   },
   {
     name: 'Календарь',
-    icon: "../../assets/svg/calendar.svg"
+    Icon: CalendarIcon
   },
   {
     name: 'Карты',
-    icon: "../../assets/svg/map.svg"
+    Icon: MapIcon
   },
   {
     name: 'Виджеты',
-    icon: "../../assets/svg/vidgets.svg"
+    Icon: VidgetsIcon
   },
   {
     name: 'Настройки',
-    icon: "../../assets/svg/setting.svg",
+    Icon: SettingIcon,
     subItems: [
       {
         name: 'Настройки профиля',
-        icon: "../../assets/svg/people.svg"
+        Icon: SettingUserIcon
       },
        {
         name: 'Управление финансами',
-        icon: "../../assets/svg/finance.svg"
+        Icon: FinanceIcon
       }
     ]
   },
   {
     name: 'Выход',
-    icon: "../../assets/svg/exit.svg"
+    Icon: ExitIcon
   }
 ]

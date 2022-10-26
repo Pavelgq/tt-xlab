@@ -1,0 +1,71 @@
+@import "../../styles/variables.scss";
+
+.item {
+  position: relative;
+  
+  
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+}
+
+.text {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: $primary-text
+}
+
+.button {
+  border: none;
+  background-color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 37px;
+  top: -2px;
+  right: -3px;
+  background-color: $primary;
+  border-radius: 5px;
+}
+
+.subList {
+  padding-left: 48px;
+}
+
+
+.nested::after {
+  content: '';
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  top: calc(50% - 6px);
+  right: 20px;
+  background-image: url(../../assets/svg/pointer.svg);
+  border-radius: 5px;
+}
+.close::after {
+  transform: rotate(180deg);
+}

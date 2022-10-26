@@ -1,3 +1,4 @@
+@import './variables.scss';
 //RESET CSS
 
 html, body, div, span, applet, object, iframe,
@@ -55,4 +56,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.title {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+
+  margin-bottom: 16px;
 }

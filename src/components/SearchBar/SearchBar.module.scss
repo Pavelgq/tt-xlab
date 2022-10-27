@@ -9,3 +9,13 @@
   margin-right: 24px;
   flex-grow: 1;
 }
+
+@media screen and (max-width: 768px) {
+  .searchBar {
+    flex-direction: column;
+  }
+  .input {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}

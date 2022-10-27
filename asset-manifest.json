@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tt-xlab/static/css/main.9a13fa8c.css",
-    "main.js": "/tt-xlab/static/js/main.6ebf29ad.js",
+    "main.js": "/tt-xlab/static/js/main.968a8376.js",
     "static/js/787.eefd03ca.chunk.js": "/tt-xlab/static/js/787.eefd03ca.chunk.js",
     "static/media/settings.svg": "/tt-xlab/static/media/settings.5f34416c13daeeb8ee88249b200d9df9.svg",
     "static/media/tables.svg": "/tt-xlab/static/media/tables.76ca1b0ddb616659b4b7a4ad880082d8.svg",
@@ -18,11 +18,11 @@
     "static/media/calendar.svg": "/tt-xlab/static/media/calendar.b7814f584ae73b246b4e0cfc96d2a76c.svg",
     "static/media/pointer.svg": "/tt-xlab/static/media/pointer.fe04bfe848e3ad61738b.svg",
     "main.9a13fa8c.css.map": "/tt-xlab/static/css/main.9a13fa8c.css.map",
-    "main.6ebf29ad.js.map": "/tt-xlab/static/js/main.6ebf29ad.js.map",
+    "main.968a8376.js.map": "/tt-xlab/static/js/main.968a8376.js.map",
     "787.eefd03ca.chunk.js.map": "/tt-xlab/static/js/787.eefd03ca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9a13fa8c.css",
-    "static/js/main.6ebf29ad.js"
+    "static/js/main.968a8376.js"
   ]
 }

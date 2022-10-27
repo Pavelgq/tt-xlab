@@ -1,46 +1,27 @@
-# Getting Started with Create React App
+# Тестовое задание X-Lab
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+[Макет](https://www.figma.com/file/ioiNY7mRuoTjftQzKQuNSt/Тестовое-задание?node-id=0%3A1)
 
-## Available Scripts
+Задача: Сверстать макет панели управления црм, подключиться к [сервису](https://dadata.ru/api/suggest/address/) и выводить адреса введенные пользователем на страницу.
 
-In the project directory, you can run:
+Описание:
 
-### `npm start`
+1. Зарегистрироваться на dadata.ru и получить API ключ для выполнения запросов.
+2. Верстка должна быть семантически верной и оптимизирована для мобильных устройств.
+3. Скрывать боковое меню, если разрешение <= 768px
+4. В боковом меню - пункт “Настройки” должен открываться и закрываться по клику, кнопка “Главная” ведет на страницу с новостями и открывается по умолчанию при запуске проекта, кнопка “Поиск адресов” ведет на страницу поиска адресов, url пути описаны в п.5.
+5. На проекте должно быть 2 url пути - главная “/” с новостями и поиск адресов “/address” - c полем ввода адреса.
+6. Блок с навигацией и блок с контентом должны скролиться (если контента больше чем укладывается в высоту экрана) независимо друг от друга, при этом header - всегда статичный и всегда перед глазами.
+7. Минимальная длина ввода в поле ввода адреса - 3 символа.
+8. Для иконок, используйте SVG
+9. Ссылки в тексте в блоке “Новости” должны быть подсвечены и кликабельны, почтовые адреса - должны быть кликабельны и направлять в почтовый клиент с заполненным почтовым адресом.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Требования:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Обязательно использовать React, Typescript.
+- Запрещено использовать UI-библиотеки и их готовые реализации/компоненты.
 
-### `npm test`
+Приветствуется:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Использование препроцессоров (sass/scss)
+- Использование webpack

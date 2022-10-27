@@ -1,6 +1,20 @@
 
-
-
 .container {
   display: flex;
+  height: calc(100vh - 80px);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+    width: calc(100vw - 1px);
+    height: auto;
+  }
+  .show {
+    display: block;
+  }
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
 }

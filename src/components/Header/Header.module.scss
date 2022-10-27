@@ -30,3 +30,33 @@
 
   color: $white;
 }
+.hamburger {
+  display: none;
+  background-color: inherit;
+  border: none;
+}
+
+.hamburger span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: $white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.close span:first-child {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.close span:nth-child(2) {opacity: 0;}
+
+.close span:last-child {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}

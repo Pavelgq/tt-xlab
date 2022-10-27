@@ -1,7 +1,21 @@
+@import "../../styles/variables.scss";
+
 .container {
   display: flex;
   flex-direction: column;
   padding: 32px;
-  // flex-grow: 1;
   flex: 1 1;
+  overflow-y: scroll;
+}
+
+.subtitle, .text {
+  margin-bottom: 24px;
+
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: $primary-text;
 }

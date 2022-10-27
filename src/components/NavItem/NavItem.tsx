@@ -20,7 +20,6 @@ export const NavItem = ({
   }, [location, link]);
 
   const toggleSubMenu = () => {
-    console.log("toggle");
     if (subItems.length > 0) {
       setSubmenu(!submenu);
     }
@@ -44,13 +43,7 @@ export const NavItem = ({
         onClick={toggleSubMenu}
       >
         <Icon className={styles.icon} />
-        {/* <button
-            type="button"
-            className={styles.button}
-            onClick={toggleSubMenu}
-          > */}
         <span className={styles.text}>{name}</span>
-        {/* </button> */}
       </button>
       {submenu && subItems.length > 0 && (
         <ul className={styles.subList}>

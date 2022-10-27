@@ -11,6 +11,7 @@
   line-height: 32px;
   color: $white;
   
+  cursor: pointer;
 
   padding: 19px 40px;
   border: none;
@@ -30,5 +31,9 @@
 
   &:hover {
     background-color: $primary-dark;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }

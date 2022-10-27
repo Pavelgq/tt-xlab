@@ -1,5 +1,6 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 export interface ButtonProps extends DetailedHTMLProps<HTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
-  className?: string
+  type: "button" | "submit" | "reset" | undefined;
+  className?: string;
 }

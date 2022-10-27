@@ -5,16 +5,20 @@ import "./styles/libs/normalize.css";
 import "./styles/global.scss";
 import "./styles/variables.scss";
 import { RoutesList } from "./Routes";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "react-query";
 
+const queryClient = new QueryClient();
 const container = document.getElementById("root")!;
 const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <RoutesList />
-    </BrowserRouter>
+    <QueryClientProvider client={queryClient}>
+      <HashRouter>
+        <RoutesList />
+      </HashRouter>
+    </QueryClientProvider>
   </React.StrictMode>
 );
 

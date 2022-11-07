@@ -12,8 +12,6 @@
     "@types/react": "^18.0.23",
     "@types/react-dom": "^18.0.7",
     "classnames": "^2.3.2",
-    "linkify-html": "^4.0.2",
-    "linkifyjs": "^4.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-linkify": "^1.0.0-alpha",
